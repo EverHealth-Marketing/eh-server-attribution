@@ -98,5 +98,3 @@ class ServerAttribution {
         observer.observe(document.body, { childList: true, subtree: true });
     }
 }
-
-window.$EC = new ServerAttribution(serverGtmEndpoint, fieldMap);
