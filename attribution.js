@@ -98,3 +98,8 @@ class ServerAttribution {
         observer.observe(document.body, { childList: true, subtree: true });
     }
 }
+
+window.ServerAttributionInit = function (serverUrl, fieldMap) {
+    window.$EC = new ServerAttribution(serverUrl, fieldMap);
+    return window.$EC;
+};
